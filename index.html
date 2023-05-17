@@ -2,48 +2,8 @@
 <html>
 
 <head>
-    <title>Text-to-Speech Example</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-        }
-
-        button {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            background-color: #007BFF;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        p {
-            font-size: 20px;
-            color: #333;
-        }
-    </style>
-</head>
+    <title>Text-to-NSpeech Example</title>
+    <link rel="stylesheet" href="styles.css" </head>
 
 <body>
     <div class="container">
@@ -52,21 +12,16 @@
         <button id="repeatButton">Repeat</button>
         <button id="showTextButton">Show answer</button>
         <p id="dateText"></p> <!-- Add a paragraph element to display the date text -->
-        <h1> Coming Soon</h1>
-        <ul>
+        <h2>Coming soon</h2>
+        <ul style="font-size: 12px">
             <li>custom range for years</li>
             <li>fix the range for days: currently only 1 to 28 will be generated</li>
             <li>custom speed by slider</li>
         </ul>
-
-
     </div>
-
-    <h2> Coming soon </h2>
 
     <script src="./script.js"> </script>
 
 </body>
-
 
 </html>
