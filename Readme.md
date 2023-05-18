@@ -12,8 +12,6 @@ to practice.
 I'll sure it with my classmates and 
 hope it'll help them too.
 
-**A license for use will soon be added.**
-
 JavaScript is not my main language and my JavaScript 
 skills are quite limited. This is basically 
 translated from python scripts I created, the 
