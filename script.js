@@ -5,7 +5,14 @@ let currentAudioUrl = null;
 function generateRandomDate() {
     const day = Math.floor(Math.random() * 28) + 1; // Random day between 1 and 28
     const month = Math.floor(Math.random() * 12) + 1; // Random month between 1 and 12
-    const year = Math.floor(Math.random() * (2023 - 1900 + 1)) + 1900; // Random year between 1900 and 2023
+    // const year = Math.floor(Math.random() * (2023 - 1900 + 1)) + 1900; // Random year between 1900 and 2023
+    const year_min = 1000;
+    const year_max = 2023;
+    const year = Math.floor(Math.random() * (year_max - year_min + 1)) + year_min; // Random year between 1900 and 2023
+
+    // Random year between 0 and 3000 (for some reason for large year the speech output 
+    // is jus wrong, hence this limit)
+    // const year = Math.floor(Math.random() * 1000);
 
     // Format the date with leading zeros if needed
     const formattedDay = day.toString().padStart(2, '0');
